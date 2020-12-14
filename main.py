@@ -14,8 +14,6 @@ butn1.click()
 
 passwd = driver.find_element_by_css_selector(css_xpath_trial.passwd_css).text
 
-
-
 inpt2 = driver.find_element_by_css_selector(css_xpath_trial.inpt2_css)
 inpt2.send_keys(passwd)
 
