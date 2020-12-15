@@ -1,7 +1,4 @@
 from selenium import webdriver
-from selenium.webdriver.common.alert import Alert
-from selenium.webdriver.common.action_chains import ActionChains
-import css_xpath_trial
 
 browser = webdriver.Chrome()
 browser.get('https://techstepacademy.com/training-ground')
