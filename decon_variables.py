@@ -15,3 +15,4 @@ car_best_years = [("Buick", "Skylark", 1972, "blue"), ("Chevorlet", "Malibu", 20
 # Ignoring any elements of a broken out variable
 for make, model, year, _ in car_best_years:
     print(f"{make} made the {model} in the year: {year}")
+
