@@ -1,9 +1,10 @@
 from pytest import mark
 
-@mark.smoke
+
+@mark.ui
 @mark.entertainment
-def test_radio():
-    assert True
+def test_radio(chrome_browser):
+    chrome_browser.get('https://www.google.com')
 
 
 @mark.entertainment

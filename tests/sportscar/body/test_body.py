@@ -2,17 +2,17 @@ from pytest import mark
 
 
 @mark.body
-def test_door():
-    assert True
+class BodyTests:
+
+    @mark.ui
+    def test_door(self, chrome_browser):
+            chrome_browser.get('https://www.google.com')
 
 
-@mark.body
-def test_windshield():
-    pass
+    def test_windshield(self):
+        pass
 
-
-@mark.body
-def test_trunk():
-    pass
+    def test_trunk(self):
+        pass
 
 
