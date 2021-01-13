@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 flask = "==0.12.1"
 numpy = "*"
+pytest-html = "*"
 
 [dev-packages]
 
