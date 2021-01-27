@@ -1,27 +1,20 @@
 
-
-
 class TrainingGroundPage:
-    def __init__(self, driver):
-        self.driver=driver
-        self.url = ''
+    def __init__(self):
         pass
 
     def type_into_input(self, text):
-        input_field = self.driver.find_element_ by_id('lpt1')
-        input_field.clear()
-        input_field.send_keys(text)
-        return None
+        pass
 
     def get_input_text(self):
-        input_field = self.driver.find_element_by_id('lpt1')
-        elem_text = input_field.get_attribute('value')
-        return elem_text
+        pass
 
-    def click_button(self):
-        button = self.driver.find_element_by_id('b1')
-        button.click()
-        return None
+    def click_button_1(self):
+        pass
+    
+
+
+
 
 
 
