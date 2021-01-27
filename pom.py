@@ -20,7 +20,9 @@ class TrainingGroundPage:
         button = self.driver.find_element_by_id('b1')
         button.click()
         return None
-
+    def close_browser(self):
+        self.driver.close()
+        return None
 
 # Test smoke
 from selenium import webdriver
@@ -35,7 +37,7 @@ trn_page.go()
 trn_page.type_into_input(test_value)
 text_from_input = trn_page.get_input_text()
 assert text_from_input == 'it worked!!', f"The test value was not asserted, actual value was '{test_value}'"
-
+trn_page.close_browser()
 
 
 
