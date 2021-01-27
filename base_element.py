@@ -30,6 +30,14 @@ class BaseElement(object):
         element = WebDriverWait(
             self.driver, 10).until(
             EC.element_to_be_clickable(locator=self.locator))
+        element.click()
+        return None
+
+    def get_text(self):
+        text = self.web_element.text
+        return text
+
+    
 
 
 
