@@ -36,7 +36,8 @@ trn_page = TrainingGroundPage(driver=browser)
 trn_page.go()
 trn_page.type_into_input(test_value)
 text_from_input = trn_page.get_input_text()
-assert text_from_input == 'it worked!!', f"The test value was not asserted, actual value was '{test_value}'"
+assert text_from_input == 'it worked!!', f"The test value was not asserted, actual value was: '{test_value}'"
+print('Test Passed')
 trn_page.close_browser()
 
 
