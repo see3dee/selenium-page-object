@@ -1,4 +1,3 @@
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -33,11 +32,12 @@ class BaseElement(object):
         element.click()
         return None
 
+    @property
     def get_text(self):
         text = self.web_element.text
         return text
 
-    
+
 
 
 
