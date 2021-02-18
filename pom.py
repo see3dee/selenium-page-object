@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 from base_element import BaseElement
+
+
 class TrainingGroundPage:
     def __init__(self, driver):
         self.driver = driver
@@ -31,7 +33,7 @@ test_value = 'it worked!!'
 # Test
 trn_page = TrainingGroundPage(driver=browser)
 trn_page.go()
-assert trn_page.button1.get_text == 'Button1'
+assert trn_page.button1.get_text == 'Button1', f"Not Asserted, actual value was {trn_page.button1.get_text}"
 trn_page.close_browser()
 
 
