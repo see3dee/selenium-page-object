@@ -30,10 +30,12 @@ from selenium import webdriver
 browser = webdriver.Chrome()
 test_value = 'it worked!!'
 
-# Test
+# Test (force fail)
 trn_page = TrainingGroundPage(driver=browser)
 trn_page.go()
-assert trn_page.button1.get_text == 'Button1', f"Not Asserted, actual value was {trn_page.button1.get_text}"
+test_value = 'Button2'
+assert trn_page.button1.get_text == test_value, f"test_value {test_value} was not asserted, " \
+                                                f"actual value was {trn_page.button1.get_text}"
 trn_page.close_browser()
 
 
